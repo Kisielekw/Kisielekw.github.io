@@ -1,0 +1,42 @@
+.BG{
+    background-color: #282828;
+    font-family: 'Lato', sans-serif;
+}
+.Landing{
+    width: 80%;
+    background-color: #ff00ae;
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.Landing h1{
+    color: black;
+    font-size: 50px;
+}
+.Landing p{
+    color: #464646
+}
+.LinkRow{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Links{
+    width: 100px;
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+}
+.AboutMe{
+    text-align: center;
+}
+.AboutMe h1{
+    color: white;
+}
+.AboutMe p{
+    width: 75%;
+    padding-left: 12.5%;
+    color: rgb(204, 204, 204);
+}
