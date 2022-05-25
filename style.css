@@ -1,6 +1,7 @@
 .BG{
     background-color: #282828;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
 .Landing{
     width: 80%;
