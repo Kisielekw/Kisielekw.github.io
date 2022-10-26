@@ -34,16 +34,6 @@ a{
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
-.Grid a{
-    background-color: #464646;
-    border: 2px solid black;
-    border-radius: 15px;
-    width: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 2%;
-    margin-right: 2%;
-}
 .Link{
     text-align: center;
     font-size: 10px;
@@ -52,6 +42,16 @@ a{
 .Project{
     text-align: center;
     color: white;
+}
+.Project a{
+    background-color: #464646;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .AboutMe{
