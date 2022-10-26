@@ -1,11 +1,13 @@
 a{
     text-decoration: none;
 }
+
 .BG{
     background-color: #282828;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
+
 .Landing{
     width: 80%;
     background-color: #ff00ae;
@@ -26,17 +28,23 @@ a{
 .Landing a{
     color: #464646
 }
-.LinkRow{
+
+.Grid{
     margin-top: 70px;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
-.Links{
-    width: 100px;
+.Link{
+    text-align: center;
     font-size: 10px;
     text-decoration: none;
-    color: black;
 }
+.Project{
+    text-align: center;
+    background-color: #464646;
+    color: white;
+}
+
 .AboutMe{
     text-align: center;
 }
