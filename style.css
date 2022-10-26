@@ -43,6 +43,9 @@ a{
     text-align: center;
     background-color: #464646;
     color: white;
+    border: 2px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .AboutMe{
