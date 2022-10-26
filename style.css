@@ -42,8 +42,7 @@ a{
 .Project{
     text-align: center;
     color: white;
-}
-.Project a{
+    text-decoration: none;
     background-color: #464646;
     border: 2px solid black;
     border-radius: 15px;
