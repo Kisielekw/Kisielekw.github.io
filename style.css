@@ -47,8 +47,7 @@ a{
     border: 2px solid black;
     border-radius: 15px;
     width: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 2%;
     margin-left: 2%;
     margin-right: 2%;
 }
