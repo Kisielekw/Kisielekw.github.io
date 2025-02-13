@@ -26,7 +26,7 @@ a{
     color: #464646
 }
 .Landing a{
-    color: #464646
+    color: black
 }
 
 .Grid{
@@ -38,16 +38,6 @@ a{
     text-align: center;
     font-size: 10px;
     text-decoration: none;
-    background-color: #ff00ae;
-    border: 2px solid black;
-    border-radius: 15px;
-    width: auto;
-    padding: 2%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-.Link:hover{
-    background-color: #ff2bbc;
 }
 
 .Project{
