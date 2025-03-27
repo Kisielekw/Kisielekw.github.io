@@ -63,6 +63,9 @@ a{
 .AboutMe h1{
     color: white;
 }
+.AboutMe h2{
+    color: white;
+}
 .AboutMe p{
     width: 75%;
     padding-left: 12.5%;

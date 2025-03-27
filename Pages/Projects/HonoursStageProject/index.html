@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Honours Stage Project</title>
+    <link rel="stylesheet" href="/Style/mainStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body class="BG">
+    <section class="Landing">
+        <h1>Honours Stage Project: Image Processing with CUDA</h1>
+        <p>My 3rd year project in which I explored the efficiency brought by using the GPU insted of the CPU</p>
+        <div class="Grid" style="grid-template-columns: auto auto auto;">
+            <div class="Link">
+                <a href="/">
+                    <h3>Home Page</h3>
+                </a>
+            </div>
+            <div class="Link">
+                <a href="https://github.com/Kisielekw/HonsProject-202106560" target="_blank">
+                    <h3>GitHub Repo</h3>
+                </a>
+            </div>
+            <div class="Link">
+                <a href="/Pages/Projects">
+                    <h3>Projects</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="AboutMe">
+        <h1>About</h1>
+        <p>
+            For my 3rd year project, I decided to explore the preformace diferece between using the GPU and the CPU for image processing. I used CUDA to create a program that would take an image and apply a filter to it. I then compared the time it took to apply the filter using the CPU and the GPU.
+            <br>
+            During this process I reserched diferent image processing techniques and how their algorithms work. I then using this knowledge to implement the filters first in C++ and then in CUDA.
+            <br>
+            Because I used CUDA I also spent some time reserching GPU architecture and how to best use the GPU to get the best preformance.
+            <br>
+            The project was a great learning experience for me as I learned a lot about image processing and how to use the GPU to get the best preformance. I recived a 1st for the project and I am very proud of the work I did.
+        </p>
+        <h1>Filters</h1>
+        <p>
+            I implemented 2 filters for the project but I also created a few more which weren't used in the final project. The filters I implemented were:
+            <br>
+            Sobel<br>
+            K-Means<br>
+            Gaussian Blur<br>
+            Diference of Gaussians<br>
+        </p>
+        <h2>Sobel</h2>
+        <p>
+            The Sobel filter is a edge detecting filter which uses 2 3x3 kernels to detect the vertical and horizontal edges in an image. The filter works by convolving the image with the 2 kernels and then combining the results to get the final image. The resulting image is a black and white image with the edges of the original image highlighted with a gradient.
+            <br>
+            The filter can be improved by finding the local maxima of the gradient and then applying a threshold to the image to get a binary image with the edges highlighted.
+            This is known as a Canny edge detector. I didn't implement this in my project but it is a common use of the Sobel filter.
+        </p>
+        <img src="Images/Sobel.png" alt="Image of the Sobel filter" max-width="75%" height="auto">
+        <h2>K-Means</h2>
+        <p>
+            The K-Means filter is a clustering filter which groups the pixels in an image into K clusters. The filter works by randomly selecting K points in the image and then assigning each pixel to the cluster with the closest point. The filter then recalculates the points by finding the mean of the pixels in each cluster and then reassigning the pixels to the new clusters. This process is repeated until the points no longer change.
+            <br>
+            The filter can be improved by using a better initialisation method and by using a better distance metric to assign the pixels to the clusters. I used the Euclidean distance metric in my implementation but there are other distance metrics that could be used.
+        </p>
+        <img src="Images/KMeans.png" alt="Image of the K-Means filter" max-width="75%" height="auto">
+        <h2>Gaussian Blur</h2>
+        <p>
+            The Gaussian Blure is the first filetr which I didnt include in my final project but I still implemented it. The filter works by convolving the image with a 2D Gaussian kernel. The kernel is a 2D array with the values of the Gaussian function. The filter works by multiplying the kernel with the image and then summing the results to get the final image.
+            <br>
+            This blure is an edge presurving blure which means that it will blure the image but it will try to keep the edges of the image sharp. This is done by using the Gaussian function which has a high value in the middle and low values at the edges.
+            <br>
+            This filter is often used in image processing to remove noise from the image as it presesrves the features of the image.
+        </p>
+        <h2>Diference of Gaussians</h2>
+        <p>
+            The Diference of Gaussians is the second filter which I didnt include in my final project but I still implemented it. The filter works by convolving the image with 2 Gaussian kernels and then subtracting the results to get the final image. The filter works by bluring the image with 2 different blures and then subtracting the results to get the edges of the image.
+            <br>
+            In my reserch I didn't initialy find this filter but I coincidentaly foind it when I descovered it's uses in styalising images. This process is described in the reserch paper entited "XDoG: An eXtended difference-of-Gaussians compendium including advanced image stylization" by Holger Winnemollera, Jan Eric Kyprianidisb and Sven C. Olsen
+        </p>
+        <h1>Results</h1>
+        <p>
+            At the end of the project I compaired the time it took to apply the filter on differently sized images usign both GPU and CPU implementations. I found that the GPU was much faster than the CPU for larger images but for smaller images the CPU was faster. This is because the GPU has a higher overhead than the CPU so for smaller images the overhead of transfering the image to the GPU was greater than the time it took to apply the filter on the CPU.
+            <br>
+            I also produced some graphs to show the time it took to apply the filter on the images. The graphs showed that the GPU was faster than the CPU for larger images but the CPU was faster for smaller images.
+        </p>
+        <img src="Images/SobelGraph.png" alt="The graph showing the time it took to apply the Sobel filter on the images" max-width="75%" height="auto" margine-bottom="10px">
+        <img src="Images/KMeansGraph.png" alt="The graph showing the time it took to apply the K-Means filter on the images" max-width="75%" height="auto">
+    </section>
+</body>
+
+</html>
