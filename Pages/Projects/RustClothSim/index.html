@@ -30,7 +30,23 @@
             </div>
         </div>
     </section>
-
+    <section class="AboutMe">
+        <h1>About</h1>
+        <p>
+            This project was created as a course work for my University degree. The task was to simulate a 2D cloth in Rust using threads. The cloth was to be made up of particles connected by springs. The simulation was to be done in real time and the cloth was to be affected by gravity.
+        </p>
+        <center class="video-container">
+            <iframe src="https://www.youtube.com/embed/6kTfjwceO7E"></iframe>
+        </center>
+        <h1>Implementation</h1>
+        <p>
+            This was the first time I used Rust. The Rust borrow checker helped alot with the threaded part of the code as it ensured there was no race conditions between threads to read and write data as the borow checker wouldnt allow multiple threads acces to the same peace of data.
+            <br>
+            The cloth is made up of springs and particles. Each particle containd a lock to allow the data to be accesed by diferent threads without race conditions. The simulation ocured in two steps. First it would calculate the fource each spring would apply to the particles and then it would move the particles based on the forces.
+            <br>
+            The similation used a thread pool that was created at the start of the program which size could be chnaged by chaning the thread_num variable. Gravity was also posible to toggle on and off by changing a peramiter to true or false in the chloth constructor.
+        </p>
+    </section>
 </body>
 
 </html>
